@@ -1,0 +1,65 @@
+.input {
+  border: solid 2px var(--color-gray-300);
+  border-radius: 3px !important;
+  width: 100%;
+  padding: 7px 11px;
+  transition: border-color 0.5s, box-shadow 0.5s;
+
+  &:hover,
+  &:focus-within {
+    border-color: var(--color-gray-400);
+    box-shadow: 0 0 0 1px var(--color-gray-400);
+  }
+}
+
+.phone {
+  :global(.ant-input-wrapper) {
+    border-radius: 3px !important;
+    border: solid 2px var(--color-gray-300);
+    transition: border-color 0.5s, box-shadow 0.5s;
+
+    :global(.ant-input-group-addon),
+    :global(.ant-input) {
+      border: 0;
+      padding: 7px 11px;
+    }
+
+    :global(.ant-input) {
+      border-left: solid 2px var(--color-gray-300);
+    }
+
+    &:hover,
+    &:focus-within {
+      border-color: var(--color-gray-400);
+      box-shadow: 0 0 0 1px var(--color-gray-400);
+    }
+  }
+}
+
+.button {
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  padding: 25px 15px;
+  border-radius: 4px;
+
+  &.avatar {
+    border: 1px solid #d1d5db !important;
+    background-color: transparent !important;
+    color: #6b7280 !important;
+
+    &:hover {
+      background-color: #f3f4f6 !important;
+    }
+  }
+
+  &.create {
+    background-color: #01e668;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: #00ce2d !important;
+    }
+  }
+}

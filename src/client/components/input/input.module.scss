@@ -1,0 +1,15 @@
+.formItem {
+  margin-bottom: 0;
+
+  :global(.ant-form-item-label) {
+    padding: 0 !important;
+    
+    & > label {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--color-gray-400);
+      font-size: var(--text-xs);
+      line-height: var(--text-xs--line-height);      
+    }
+  }
+}
