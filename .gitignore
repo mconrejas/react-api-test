@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 public/uploads/*
+vite.config.ts.timestamp-*.mjs
 
 # Editor directories and files
 .vscode/*
